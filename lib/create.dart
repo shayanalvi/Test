@@ -35,7 +35,6 @@ class _CreateScreenState extends State<CreateScreen> {
         actions: [
           TextButton(
             onPressed: () {
-              // Handle post action here
             },
             child: Text(
               'Post',

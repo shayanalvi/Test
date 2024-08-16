@@ -14,7 +14,6 @@ class _SplashScreenState extends State<SplashScreen>
     with SingleTickerProviderStateMixin {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
     Future.delayed(Duration(seconds: 2), () {
@@ -46,7 +45,6 @@ class _SplashScreenState extends State<SplashScreen>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Closing square bracket added here
             Icon(
               Icons.feed_outlined,
               size: 80,
@@ -61,7 +59,7 @@ class _SplashScreenState extends State<SplashScreen>
                 fontSize: 32,
               ),
             ),
-          ], // Closing square bracket added here
+          ], 
         ),
       ),
     );

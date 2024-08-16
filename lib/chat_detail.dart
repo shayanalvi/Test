@@ -19,7 +19,6 @@ class ChatDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Generate random avatar images for sender and receiver
     final senderAvatar = avatarImages[Random().nextInt(avatarImages.length)];
     final receiverAvatar = avatarImages[Random().nextInt(avatarImages.length)];
 
@@ -32,9 +31,7 @@ class ChatDetailScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon(Icons.more_vert, color: Colors.black),
-            onPressed: () {
-              // Handle more options
-            },
+            onPressed: () {},
           ),
         ],
       ),
@@ -80,11 +77,9 @@ class ChatDetailScreen extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                // Add more messages here
               ],
             ),
           ),
-          // Input field for new messages
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -125,7 +120,6 @@ class ChatDetailScreen extends StatelessWidget {
             ),
           SizedBox(width: 8),
           Expanded(
-            // Ensure the text fits within its container
             child: Container(
               padding: EdgeInsets.all(12),
               decoration: BoxDecoration(

@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage>
 
   Widget _buildBody() {
     if (_currentIndex == 2) {
-      return CreateScreen(); // Navigate to CreateScreen from create.dart
+      return CreateScreen(); 
     } else if (_currentIndex == 3) {
       return ChatScreen();
     } else {
